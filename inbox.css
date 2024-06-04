@@ -1,0 +1,111 @@
+.alif{
+    width: fit-content;
+    display: flex;
+}
+.ba{
+    list-style-type: none;
+    padding: 10px;
+    width: fit-content; 
+    
+}
+
+.taa{
+    display: inline-block;
+    padding: 10px;
+    color: white !important;
+}
+.saa{
+    width: fit-content;
+    padding: 10px;  
+}
+.dall{
+    background-color: rgb(9, 9, 15); 
+    width: 99.1%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tull{
+    padding: 10px;
+
+}
+.gimm{
+    width: 30px;
+    height: 30px;
+}
+
+.lam{
+    display: inline-block; 
+    width: fit-content;
+    padding: 0px;  
+    color: white;
+}
+.hamza{
+    background: white;
+    color: black;
+    box-shadow: 50px  white;
+}
+.one{
+    border-color: white !important;
+}
+.two{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.three{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(88, 87, 87);
+    color: white;
+    border: none;
+}
+.four{
+    height: 311px;
+}
+.five{
+    
+    border-top: 0.1px solid rgb(31, 30, 30);
+}
+.six{
+    text-align: center;
+}
+.all:hover{
+    cursor: pointer;
+    background-color: rgb(201, 193, 193);
+}
+.seven{
+    background-color: greenyellow;
+    width: fit-content;
+    padding: 30px 30px 0px 30px;
+    border-radius: 10px;
+}
+.eight{
+    background-color: greenyellow;
+    padding: 30px 30px 0px 30px;
+    border-radius: 10px; 
+}
+.nine{
+    background-color: rgb(255, 255, 255);
+    padding: 30px 30px 0px 30px;
+    border-radius: 10px; 
+}
+.ten{
+    color: white;
+}
+.eleven{
+    font-size: 30px; 
+    color: blue;
+}
+.twelve:hover{
+    background-color: blue;
+}
+.thirteen{
+    font-size: 30px; 
+}
+.fourteen{
+    box-shadow: inset whitesmoke;
+}
+.fifteen{
+    background-color: black;
+}

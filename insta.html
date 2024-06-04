@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js">
+    <link rel="stylesheet" href="dist/css/ola.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .one {
+            margin-right: 15% !important;
+        }
+
+        .two {
+            padding: 2px;
+        }
+
+        .three {
+            background-color: green;
+            border-radius: 10px;
+        }
+
+        .four {
+            color: black;
+            text-decoration: none;
+        }
+
+        .five {
+            background-color: yellow !important;
+            padding-top: 0px;
+        }
+
+        .six {
+            background-color: white;
+            border: solid 1px rgb(226, 223, 223);
+            border-radius: 10px;
+        }
+
+        .seven {
+            color: white !important;
+            background-color: rgb(31, 30, 30);
+            padding: 15px;
+            border-radius: 25px;
+            margin-bottom: 5px !important;
+        }
+
+        .eight {
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .nine {
+            border: solid 1px rgb(226, 223, 223);
+            /* width: 30%;
+            height: 50%; */
+            display: flex;
+            align-items: center;
+            align-content: center;
+            border-radius: 10px;
+        }
+
+        .ten {
+            background-color: white;
+            border: solid 1px rgb(226, 223, 223);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .eleven {
+            margin-left: 15px;
+        }
+
+        .twelve {
+            border: solid 1px rgb(226, 223, 223);
+            width: 100%;
+            height: 42%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            border-radius: 10px;
+        }
+
+        .clas {
+            text-align: center;
+        }
+
+        .thirteen {
+            background: rgb(218, 208, 208);
+            height: 100%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="alert alert-danger alert-dismissible">CAVEAT:This is a student's project and not an
+        attempt to clone the existing webpage <button class="btn-close" data-bs-dismiss="alert"
+            aria-label="&times;"></button>
+    </div>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <img src="access/n1.webp" alt="">
+            <label for="exampleDataList" class="form-label navbar-brand"></label>
+            <input class="form-control w-25 one" list="datalistOptions" id="exampleDataList"
+                placeholder="search product, stores and recipes">
+            <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+            </datalist>
+            <li class="nav-item dropdown w-25">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> 94105 </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <form class="nav-item">
+                <button class="btn btn-primary btn-lg two" type="submit">Sign up free</button>
+            </form>
+        </div>
+    </nav><br><br><br>
+    <div class="row w-100 p-5">
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/imn.webp" alt="" class="three">
+                <h6>Sprouts <br> Farmers <br><span class="five"> In-store prices</span></h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/in1.webp" alt="" class="three">
+                <h6>Rainbow <br> Grocery <br><span class="five"> In-store prices</span></h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/in2.webp" alt="" class="six">
+                <h6>Costco <br> By 12:45pm</h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/o.webp" alt="" class="six">
+                <h6>Safeway <br>1hr</h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/in5.png" alt="" class="six">
+                <h6>Walgreens <br><span class="five"> In-store prices</span></h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/in6.webp" alt="" class="six">
+                <h6>Walgreens <br><span class="five"> In-store prices</span></h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/in7.webp" alt="" class="six">
+                <h6>Woodland <br>By 8:00am</h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/in8.webp" alt="" class="six">
+                <h6>Gus's <br>By 8:00am</h6>
+            </a>
+        </div>
+        <div class="col-lg p-1">
+            <a href="#" class="four">
+                <img src="access/in6.webp" alt="" class="six">
+                <h6>BevMo! <br><span class="five"> In-store prices</span></h6>
+            </a>
+        </div>
+        <div class="col-lg p-3 ">
+            <a href="" class="four">
+                <i class="bi bi-arrow-right seven "> </i><br><br>
+                <h6><b>Show all</b> <br>66 stores</h6>
+            </a>
+        </div>
+    </div>
+    <div class="row w-100 p-5">
+        <h2>Stores to help you save</h2>
+        <div class="col-lg p-1 ">
+            <div class="twelve">
+                <a href="#" class="four">
+                    <img src="access/k1.webp" alt="" class="eight">
+                    <h6 style="display: inline-block">Walmart <br>Groceries Home Electronics </h6>
+                </a>
+            </div><br>
+            <div class="twelve p-2">
+                <a href="#" class="four ">
+                    <img src="access/in2.webp" alt="" class=" ten" style=" display: inline-block">
+                    <h6 style=" display: inline-block" class="eleven">Walgreens <br>
+                        Delivery by 10:15am0.8 mi <br>Health and Wellness Drugstore <br>
+                        Convenience <br><span class="five">In-store prices</span>
+                    </h6>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg p-1 ">
+            <div class="nine">
+                <a href="#" class="four">
+                    <img src="access/k3.webp" alt="" class="eight">
+                    <h6 style="display: inline-block">Sprouts Farmers Market <br> Delivery by 3:45pm 9.3 mi <br>Pickup
+                        available <br>Organic Groceries Butcher Shop <br>
+                        <span class="five"> In-store prices</span>EBT
+                    </h6>
+                </a>
+            </div><br>
+            <div class="nine">
+                <a href="#" class="four">
+                    <img src="access/k3.webp" alt="" class="eight">
+                    <h6 style="display: inline-block">Sprouts Farmers Market <br> Delivery by 3:45pm 9.3 mi <br>Pickup
+                        available <br>Organic Groceries Butcher Shop <br>
+                        <span class="five"> In-store prices</span>EBT
+                    </h6>
+                </a>
+            </div><br>
+        </div>
+        <div class="col-lg p-1 ">
+            <div class="nine">
+                <a href="#" class="four">
+                    <img src="access/k3.webp" alt="" class="eight">
+                    <h6 style="display: inline-block">Sprouts Farmers Market <br> Delivery by 3:45pm 9.3 mi <br>Pickup
+                        available <br>Organic Groceries Butcher Shop <br>
+                        <span class="five"> In-store prices</span>EBT
+                    </h6>
+                </a>
+            </div><br>
+            <div class="nine">
+                <a href="#" class="four">
+                    <img src="access/k3.webp" alt="" class="eight">
+                    <h6 style="display: inline-block">Sprouts Farmers Market <br> Delivery by 3:45pm 9.3 mi <br>Pickup
+                        available <br>Organic Groceries Butcher Shop <br>
+                        <span class="five"> In-store prices</span>EBT
+                    </h6>
+                </a>
+            </div><br>
+        </div>
+        <div class="thirteen">
+            <div class="clas">
+                <img src="access/k1.webp" alt=""><br>
+                <h2>There's more to explore</h2>
+                <h6>Shop 66 stores (and counting) in San Francisco.</h6><br>
+                <button class="btn btn-dark btn-lg " type="submit" style="border-radius: 50px">View all stores</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js">
+    <link rel="stylesheet" href="dist/css/ola.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .gimm {
+            width: 40px;
+            height: 40px;
+        }
+
+        .one:hover {
+            cursor: pointer;
+            color: green !important;
+        }
+
+        .two {
+            color: white !important;
+        }
+
+        .the {
+            background-color: rgb(230, 179, 179);
+            border: none;
+            border-radius: 20px;
+        }
+
+        .three {
+            background-color: black;
+            border: solid 2px white;
+            border-radius: 20px;
+        }
+
+        .four {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            position: relative;
+
+        }
+
+        .four:hover .text {
+            opacity: 1;
+        }
+
+        .five {
+            border-bottom: 1px ridge black;
+            margin-right: none;
+            margin-left: none;
+        }
+
+        .text {
+            position: right;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gimm {
+            width: 30px;
+            height: 30px;
+        }
+        .fourty{
+            width: 25px;
+            height: 25px;  
+        }
+        .fou{
+            width: 13px;
+            height: 20px; 
+        }
+        .seven {
+            margin-top: 50px;
+        }
+
+        .eight {
+            width: 20px;
+            height: 20px;
+        }
+
+        .nine {
+            border-radius: 50px !important;
+        }
+
+        .ten {
+            background-color: black;
+            width: fit-content !important;
+            box-shadow: 2px 2px rgb(247, 244, 244);
+            border-radius: 20px;
+        }
+
+        .eleven {
+            text-align: center;
+        }
+
+        .twelve h6 {
+            border-radius: 6px 0px;
+            padding: 10px 16px;
+            font-weight: 700;
+            font-size: var(--text-base, 12px);
+            line-height: 13.75px;
+            color: rgb(0, 0, 0);
+            background: rgb(255, 210, 215);
+            padding-right: 0px !important;
+        }
+        .fift{
+            font-size: 12px;
+            list-style-type: none;
+            color: white;
+        }
+        .sist{
+            list-style-type: none;
+            color: white;   
+        }
+        .sevent{
+            color: white;
+        }
+
+        .thr {
+            padding-top: 0px !important;
+        }
+    </style>
+    <title>Spotify</title>
+</head>
+
+<body style="background-color: black">
+    <div class="alert alert-danger alert-dismissible">CAVEAT:This is a student's project and not an
+        attempt to clone the existing webpage <button class="btn-close" data-bs-dismiss="alert"
+            aria-label="&times;"></button>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid p-3">
+            <img src="access/sp.png" alt="" class="navbar-brand  gimm">
+            <a class="navbar-brand two" href="#">Spotify</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active one two" aria-current="page" href="#">Premium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active one two" aria-current="page" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active one two" aria-current="page" href="#">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active two" aria-current="page" href="">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active one two" aria-current="page" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active one two" aria-current="page" href="#">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="p-5">
+        <h1 class="sevent">
+            Listen without limits. Try <br> 1 month of Premium <br> Individual for free.
+        </h1>
+        <h6 class="sevent">Only $10.99/month after. Cancel anytime.</h6><br>
+        <button class="btn btn-primary btn-lg the sevent" type="button">Try free for 1 month</button>
+        <button class="btn btn-primary btn-lg three sevent" type="button">View all plan</button><br><br>
+        <p class="sevent">Free for 1 month, then $10.99 per month after. Offer only <br> available if you haven't tried
+            Premium before. Terms apply.
+        </p>
+    </div>
+    </div>
+    <div style="text-align: center; width: fit-content;" class="m-auto">
+        <h2 class="sevent">Experience the difference</h2>
+        <h4 class="sevent">Go Premium and enjoy full control of your listening. Cancel anytime.</h4>
+        <div class="four gap-5 five w-75">
+            <h5 class="main-text sevent">What you'll get</h5>
+            <!-- <p class="text">ygygw8ugfgw78g87 <br> gw87g87gw87fg87w</p> -->
+            <h5 class="sevent">Spotify's <br> Free plan</h5>
+            <i class="bi bi-arrow-repeat sevent">Premium</i>
+        </div>
+        <div class="four gap-5 five w-75">
+            <h5 class="sevent">What you'll get</h5>
+            <i class="bi bi-android2"></i>
+            <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <div class="four gap-5 five w-75">
+            <h5 class="sevent">What you'll get</h5>
+            <i class="bi bi-android2"></i>
+            <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <div class="four gap-5 five w-75">
+            <h5 class="sevent">What you'll get</h5>
+            <i class="bi bi-android2"></i>
+            <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <div class="four gap-5 five w-75">
+            <h5 class="sevent">What you'll get</h5>
+            <i class="bi bi-android2"></i>
+            <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <div class="four gap-5 five w-75">
+            <h5 class="sevent">What you'll get</h5>
+            <i class="bi bi-android2"></i>
+            <i class="bi bi-arrow-repeat"></i>
+        </div>
+    </div><br><br>
+    <div style="text-align: center">
+        <h2 class="sevent">
+            Affordable plans for any situation
+        </h2>
+        <h5 class="sevent">Choose a Premium plan and listen to ad-free music without limits on your phone, speaker, <br>
+            and other devices. Pay in various ways. Cancel anytime.</h5>
+        <img src="access/Ca.PNG" alt="" class="gimm">
+        <img src="access/Ca.PNG" alt="" class="gimm">
+        <img src="access/Ca.PNG" alt="" class="gimm">
+        <img src="access/Ca.PNG" alt="" class="gimm">
+        <img src="access/Ca.PNG" alt="" class="gimm">
+    </div><br><br>
+    <div class="d-flex justify-content-center gap-4">
+        <div class="seven">
+            <h2 class="sevent">All Premium plans include</h2>
+        </div>
+        <div>
+            <h6 class="sevent">Ad-free music listening</h6>
+            <h6 class="sevent">Download to listen offline</h6>
+            <h6 class="sevent">Play songs in any order</h6>
+            <h6 class="sevent">High audio quality</h6>
+            <h6 class="sevent">Listen with friends in real time</h6>
+            <h6 class="sevent">Organize listening queue</h6>
+        </div>
+    </div>
+    <div class="row w-100 p-5 gap-5">
+        <div class="col-lg p-5 ten thr">
+            <div class="twelve">
+                <h6 class="sevent">Free trial</h6>
+            </div>
+            <img src="access/Ca.PNG" alt="" class="eight">
+            <h5 style="display: inline-block; color: white">Premium</h5>
+            <h4 style="color: pink">Individual</h4>
+            <h6 style="color: white">Free for 3 months <br> <span style="color: rgb(172, 169, 169)">$10.99 / month
+                    after</span></h6>
+            <hr style="width: 100%; color: rgb(185, 179, 179)">
+
+            <ul>
+                <li style="color: white">1 Premium account</li>
+                <li style="color: white"> Cancel anytime</li>
+                <li style="color: white">15 hours/month of listening time from our <br> audiobooks subscriber catalog
+                </li>
+            </ul><br><br><br>
+            <div class="d-grid gap-2 w-100">
+                <button class="btn btn-primary nine" type="button">Try free for 3 months </button>
+            </div><br>
+            <p style="color: rgb(179, 178, 178)">Individual plan only. $10.99/month after. Terms and <br> conditions
+                apply. Open only to users who haven't already <br> tried Premium. Offer ends May 14, 2024.</p>
+        </div>
+        <div class="col-lg p-5 ten ">
+            <img src="access/Ca.PNG" alt="" class="eight">
+            <h5 style="display: inline-block; color: white">Premium</h5>
+            <h4 style="color: rgb(190, 228, 23)">Duo</h4>
+            <h6 style="color: white">$14.99 / month</h6>
+            <hr style="width: 100%; color: rgb(185, 179, 179)">
+
+            <ul>
+                <li style="color: white">2 Premium account</li>
+                <li style="color: white"> Cancel anytime</li>
+                <li style="color: white">15 hours/month of listening time from our <br> audiobooks subscriber catalog
+                    (plan <br> manager only)
+                </li>
+            </ul><br><br>
+            <div class="d-grid gap-2 w-100">
+                <button class="btn btn-primary nine" type="button">Try free for 3 months </button>
+            </div><br>
+            <p style="color: rgb(179, 178, 178)">For couples who reside at the same address. Terms apply.</p>
+        </div>
+        <div class="col-lg p-5 ten ">
+            <img src="access/Ca.PNG" alt="" class="eight">
+            <h5 style="display: inline-block; color: white">Premium</h5>
+            <h4 style="color: rgb(49, 60, 158)">Family</h4>
+            <h6 style="color: white">$16.99 / month</h6>
+            <hr style="width: 100%; color: rgb(185, 179, 179)">
+
+            <ul>
+                <li style="color: white"> Up to 6 Premium or Kids accounts</li>
+                <li style="color: white"> Control content marked as explicit</li>
+                <li style="color: white"> Access to Spotify Kids</li>
+                <li style="color: white"> Cancel anytime</li>
+                <li style="color: white">15 hours/month of listening time from our <br> audiobooks subscriber catalog
+                </li>
+            </ul>
+            <div class="d-grid gap-2 w-100">
+                <button class="btn btn-primary nine" type="button">Try free for 3 months</button>
+            </div><br>
+            <p style="color: rgb(179, 178, 178)">For up to 6 family members residing at the same address. <br> Terms
+                apply.</p>
+        </div>
+    </div>
+    <div class="p-5 d-flex justify-content-center">
+        <div class=" w-50 p-5 ten thr">
+            <div class="twelve">
+                <h6 class="">Free trial</h6>
+            </div>
+            <img src="access/Ca.PNG" alt="" class="eight">
+            <h5 style="display: inline-block; color: white">Premium</h5>
+            <h4 style="color: pink">Student</h4>
+            <h6 style="color: white">Free for 1 month <br> <span style="color: rgb(172, 169, 169)">$5.99 / month
+                    after</span></h6>
+            <hr style="width: 100%; color: rgb(185, 179, 179)">
+
+            <ul>
+                <li style="color: white"> 1 verified Premium account</li>
+                <li style="color: white"> Discount for eligible students</li>
+                <li style="color: white"> Access to Hulu</li>
+                <li style="color: white">Cancel anytime</li>
+            </ul><br><br><br><br>
+            <div class="d-grid gap-2 w-100">
+                <button class="btn btn-primary nine" type="button">Try free for 3 months </button>
+            </div><br>
+            <p style="color: rgb(179, 178, 178)">Individual plan only. $10.99/month after. Terms and <br> conditions
+                apply. Open only to users who haven't already <br> tried Premium. Offer ends May 14, 2024.</p>
+        </div>
+    </div>
+    <div style="text-align: center">
+        <h4 class="sevent">Questions?</h4>
+        <h6 class="sevent">We've got answers.</h6>
+        <h6 class="sevent">Find more answers in our support site.</h6>
+    </div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    How does the Spotify Premium trial work?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    How do I cancel my Premium plan?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    How does the Premium Duo plan work?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    How does the Premium Family plan work?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    How does the Premium Student Plan work?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    How much is Spotify Premium in USA?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    How does audiobook listening time work for Premium Individual?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    How does audiobook listening time work for Premium Duo and Family?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row w-100 p-5">
+        <div class="col-lg p-5">
+            <img src="access/Ca.PNG" alt="" class="fou" >
+            <h4 style="display: inline-block">Spotify</h4>
+        </div>
+        <div class="col-lg p-5">
+           <a href="" class="sist">COMPANY</a><br><br>
+           <a href="" class="sist">About</a><br><br>
+           <a href="" class="sist">Jobs</a><br><br>
+           <a href=""class="sist">For the Record</a>
+        </div>
+        <div class="col-lg p-5">
+            <a href="" class="sist">COMMUNITIES</a><br><br>
+            <a href=""class="sist">For Artists</a><br><br>
+            <a href=""class="sist">Developers</a><br><br>
+            <a href="" class="sist">Advertising</a><br><br>
+            <a href=""class="sist">Investors</a><br><br>
+            <a href=""class="sist">Vendors</a>
+         </div>
+         <div class="col-lg p-5">
+            <a href=""class="sist">USEFUL LINKS</a><br><br>
+            <a href="" class="sist">Support</a><br><br>
+            <a href="" class="sist">Web Player</a><br><br>
+            <a href="" class="sist">Free Mobile App</a>
+         </div>
+         <div class="col-lg p-5">
+            <a href="" class="sist">SPOTIFY PLANS</a><br><br>
+            <a href="" class="sist">Premium Individual</a><br><br>
+            <a href="" class="sist">Premium Duo</a><br><br>
+            <a href="" class="sist">Premium Family</a><br><br>
+            <a href="" class="sist">Premium Student</a><br><br>
+            <a href="" class="sist">Spotify Free</a>
+         </div>
+         <div class="col-lg p-5">
+            <img src="access/Ca.PNG" alt="" class="fourty">
+            <img src="access/Ca.PNG" alt="" class="fourty">
+            <img src="access/Ca.PNG" alt="" class="fourty">
+         </div>
+    </div>
+    <div class="row w-100 p-5">
+        <div class="col-lg p-5">
+           <a href="" class="fift">Legal</a> 
+        </div>
+        <div class="col-lg p-5 ">
+            <a href="" class="fift">Safety & Privacy Center</a> 
+        </div>
+        <div class="col-lg p-5 ">
+            <a href=""class="fift">Privacy Policy</a> 
+         </div>
+         <div class="col-lg p-5">
+            <a href=""class="fift">Cookies</a> 
+         </div>
+         <div class="col-lg p-5">
+            <a href="" class="fift">About Ads</a> 
+         </div>
+         <div class="col-lg p-5">
+            <a href="" class="fift">Accessibility</a> 
+         </div>
+         <div class="col-lg p-5">
+            <a href="" class="fift">Notice at Collection</a> 
+         </div>
+         <div class="col-lg p-5">
+            <a href="" class="fift">Cookies Settings</a> 
+         </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
